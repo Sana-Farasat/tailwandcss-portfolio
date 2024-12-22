@@ -7,7 +7,7 @@ import Contact from "./contact-us/page";
 
 export default function Home() {
   return (
-    <main className="px-4 sm:px-8 lg:px-16">
+    <main className="max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-16">
       {/* <section className="flex items-center justify-between ml-16 mr-80 "> */}
       <section className="flex flex-col items-center sm:flex-row justify-between mt-16 gap-3">
         <div className="mb-8 sm:mb-0 md:mt-8">

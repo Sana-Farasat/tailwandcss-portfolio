@@ -12,14 +12,14 @@ import {
 
 function Header() {
   return (
-    <header className="flex justify-between items-center px-3 py-3">
+    <header className=" max-w-[1500px] mx-auto flex justify-between items-center px-3 py-3">
       <div>
         <Image
           src="/logo.jpg"
           alt="Logo"
           height={110}
           width={110}
-          className="rounded-full"
+          className="rounded-full layout-responsive"
         />
       </div>
       <div>

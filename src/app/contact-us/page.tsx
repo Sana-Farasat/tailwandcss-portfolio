@@ -10,8 +10,8 @@ function Contact() {
   return (
     <main>
       <div className="flex flex-col text-gray-400 text-3xl mt-12 text-center">
-        <h2 className="text-8xl font-bold p-3  text-red-700">Hire Me</h2>
-        <p>To grow your buisness at planet scale!</p>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold p-3 text-red-700">Hire Me</h2>
+        <p className="text-base md:text-3xl xl:text-6xl">To grow your buisness at planet scale!</p>
       </div>
 
       <div className="flex  mt-10  justify-center">
@@ -22,34 +22,34 @@ function Contact() {
         </Link>
       </div>
 
-      <div className="text-white flex flex-col items-center sm:flex sm:flex-row justify-center mt-7 gap-12 mx-auto">
+        <div className="text-white grid grid-cols-2 md:grid-cols-4 justify-items-center gap-2 lg:space-x-2 mx-auto my-4">
         <Link href="https://www.facebook.com/profile.php?id=100009478189380">
-          <BiLogoFacebookCircle className="h-36 w-36 bg-blue-700 rounded-3xl" />
+          <BiLogoFacebookCircle className="h-20 w-auto md:h-36 md:w-36 bg-blue-700 rounded-3xl layout-responsive" />
         </Link>
         <Link href="https://www.instagram.com/sana_farasat/">
-          <FaInstagramSquare className="h-36 w-36 bg-pink-700 rounded-3xl" />
+          <FaInstagramSquare className="h-20 w-auto md:h-36 md:w-36 bg-pink-700 rounded-3xl layout-responsive" />
         </Link>
         <Link href="https://www.linkedin.com/in/sana-farasat-b438a22b9/">
-          <FaLinkedin className="h-36 w-36 bg-blue-800 rounded-3xl" />
+          <FaLinkedin className="h-20 w-auto md:h-36 md:w-36 bg-blue-700 rounded-3xl layout-responsive" />
         </Link>
         <Link href="https://github.com/Sana-Farasat">
-          <FaGithub className="h-36 w-36 bg-black rounded-3xl" />
+          <FaGithub className="h-20 w-auto md:h-36 md:w-36 bg-black rounded-3xl layout-responsive" />
         </Link>
       </div>
 
-      <div className="flex text-gray-400 text-3xl mt-12  justify-center">
+      <div className="flex text-gray-400 text-xl md:text-3xl mt-12 justify-center ">
         <div>
           <legend>Name: </legend>
 
           <input
             type="text"
             placeholder=" Enter your name"
-            className="rounded-lg"
+            className="rounded-lg py-2 px-3"
           />
         </div>
       </div>
 
-      <div className="flex text-gray-400 text-3xl mt-12  justify-center ">
+      <div className="flex text-gray-400 text-xl md:text-3xl mt-12 justify-center ">
         <div>
           <legend>Message: </legend>
 
@@ -58,12 +58,12 @@ function Contact() {
             rows={4}
             cols={24}
             placeholder="Enter your message here............"
-            className="rounded-lg"
+            className="rounded-lg py-2 px-3"
           ></textarea>
         </div>
       </div>
 
-      <div className="flex  mt-12  justify-center">
+      <div className="flex  my-12  justify-center">
         <button className="bg-red-800 text-white text-3xl px-4 py-2 rounded-md transition-transform duration-75 scale-105 hover:bg-slate-400 hover:text-black">
           Send Email
         </button>
