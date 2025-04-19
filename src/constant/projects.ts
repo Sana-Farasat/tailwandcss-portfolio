@@ -1,7 +1,7 @@
 type Project = {
     name: string;
     image: string;
-    link: any;
+    link: string;
   };
 
 export const projects : Project[] = [

@@ -76,12 +76,7 @@
 //   );
 // }
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { FaCss3Alt, FaReact } from "react-icons/fa";
-import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiPython, SiStreamlit, SiTypescript } from "react-icons/si";
+import Cli_Projects from "@/components/about";
 
 export default function AboutMe() {
   return (
@@ -94,7 +89,7 @@ export default function AboutMe() {
           </h2>
 
           <p className="text-lg leading-relaxed mb-6">
-            I'm a passionate <strong>Frontend Developer</strong> exploring the
+            I&apos;m a passionate <strong>Frontend Developer</strong> exploring the
             world of <strong>Backend Development</strong>. I’ve built scalable
             and responsive UIs using{" "}
             <span className="text-blue-900 font-bold">Next.js</span>,{" "}
@@ -160,7 +155,10 @@ export default function AboutMe() {
         </div>
       </section>
       {/* ------------Section 2-------------- */}
-      <section>
+
+      <Cli_Projects />
+      
+      {/* <section>
         <div className="text-center text-xl md:text-3xl text-white mt-4">
           <h2 className=" text-xl md:text-3xl sm:text-[40px] font-bold">
             CLI Based Projects Here!!
@@ -260,7 +258,7 @@ export default function AboutMe() {
             />
           </motion.div>
         </div>
-      </section>
+      </section> */}
       {/* ------------Section 3-------------- */}
       <section>
         {/* ------------Github Div-------------- */}
