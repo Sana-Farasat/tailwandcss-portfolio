@@ -4,6 +4,8 @@ import Image from "next/image";
 import TypewriterComponent from "../components/typewriter";
 import About from "./about/page";
 import Contact from "./contact-us/page";
+import Projects from "./projects/page";
+import Skills from "./skills/page";
 
 export default function Home() {
   return (
@@ -35,10 +37,16 @@ export default function Home() {
           <TypewriterComponent />
         </div>
       </section>
+      <br />
       <section>
         <About />
       </section>
-
+      <section>
+        <Skills />
+      </section>
+      <section>
+        <Projects />
+      </section>
       <section>
         <Contact />
       </section>
