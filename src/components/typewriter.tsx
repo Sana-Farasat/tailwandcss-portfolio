@@ -7,9 +7,9 @@ const TypewriterComponent = () => {
       <Typewriter
         options={{
           strings: [
-            "Currently learning Next.js",
-            "With tailwand css framework",
-            "By using typescript language",
+            "I Build Web Apps using Next.js",
+            "For Web Designs I Use Figma",
+            "Currently Learning Agentic AI",
           ],
           autoStart: true,
           loop: true,

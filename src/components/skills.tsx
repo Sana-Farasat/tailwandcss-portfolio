@@ -1,5 +1,6 @@
 "use client";
 
+import "animate.css";
 import { FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
 import { RiNextjsFill } from "react-icons/ri";
@@ -16,7 +17,7 @@ import { motion } from "framer-motion";
 
 function Skills() {
   return (
-    <main className="max-w-screen-2xl mx-auto bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950">
+    <main className="max-w-screen-2xl mx-auto bg-gradient-to-tr  from-gray-400 via-gray-800 to-gray-950">
       {/* <section>
         <div className="text-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950">
           <h2 className="text-[50px] font-bold text-red-700 p-4">My Skills</h2>
@@ -42,7 +43,7 @@ function Skills() {
         <br />
       </section>*/}
 
-      <h2 className="text-5xl flex justify-center md:text-6xl lg:text-7xl xl:text-8xl font-bold p-3 text-red-700">
+      <h2 className="text-5xl flex justify-center md:text-6xl lg:text-7xl xl:text-8xl font-bold p-3 text-white">
         My Skills
       </h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-7 max-w-5xl mx-auto overflow-visible ">
@@ -53,7 +54,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             {" "}
             <IoLogoHtml5 className="text-red-500 h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
@@ -67,7 +69,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <FaCss3Alt className="text-blue-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -81,7 +84,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <IoLogoJavascript className="text-yellow-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -95,7 +99,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 "
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiTypescript className="text-blue-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -109,7 +114,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <FaReact className="text-pink-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -124,7 +130,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <RiNextjsFill className="text-black  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -138,7 +145,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiPython className="text-blue-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
 
@@ -152,7 +160,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiStreamlit className="text-red-500  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-red-600">Streamlit</h2>
@@ -165,7 +174,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiVercel className="text-white  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-black-600">Vercel</h2>
@@ -178,7 +188,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiSanity className="text-red-600  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-red-600">Sanity</h2>
@@ -191,7 +202,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiNpm className="text-red-600  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-red-600">NPM</h2>
@@ -204,7 +216,8 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110"
+            className="rounded-3xl w-72 h-48 flex flex-col justify-center items-center text-3xl text-white mt-10 bg-gradient-to-t  from-gray-100 via-gray-800 to-gray-950 transition-transform duration-300 hover:scale-110 animate-pulse"
+            style={{ animationDuration: "2s" }}
           >
             <SiDaisyui className="text-red-600  h-24 w-24 md:h-28 md:w-28 transition-transform duration-300 hover:scale-110" />
             <h2 className="text-red-600">Daisy Ui</h2>
