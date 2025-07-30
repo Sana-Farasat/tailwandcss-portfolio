@@ -4,10 +4,10 @@ import Image from "next/image";
 import TypewriterComponent from "../components/typewriter";
 import About from "./about/page";
 import Contact from "./contact-us/page";
-import Skills from "./skills/page";
 import FeaturedProjects from "@/components/featured";
 import Services from "@/components/services";
 import TechStack from "@/components/techstack";
+import SkillsCarousel from "@/components/skillscarousel";
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
       <br />
       <section>
-        <Skills />
+        <SkillsCarousel />
       </section>
       <br />
       <br />

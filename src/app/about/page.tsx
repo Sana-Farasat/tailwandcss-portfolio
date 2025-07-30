@@ -1,27 +1,50 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function AboutMe() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    });
+  }, []);
+
   return (
     <main className="max-w-screen-2xl mx-auto bg-gradient-to-br from-gray-400 via-gray-800 to-gray-900">
       {/* ------------Section 1-------------- */}
       <section className="px-6 py-12 md:px-20 lg:px-40 text-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 border-b-4 border-white inline-block pb-1">
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-6 border-b-4 border-white inline-block pb-1"
+            data-aos="fade-up"
+          >
             👋 About Me
           </h2>
 
-          <p className=" text-2xl font-semibold leading-relaxed mb-6">
+          <p
+            className=" text-2xl font-semibold leading-relaxed mb-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             I&apos;m a passionate Frontend Developer exploring the world of
-            Backend Development. I’ve built scalable and responsive UIs using{" "}
-            Next.js, TailwindCSS, and modern UI libraries like DaisyUI and{" "}
+            Backend Development. I&apos;ve built scalable and responsive UIs
+            using Next.js, TailwindCSS, and modern UI libraries like DaisyUI and{" "}
             ShadCN. I also work with Streamlit for Python-based interfaces.
           </p>
 
-          <p className="text-2xl font-semibold leading-relaxed mb-6">
+          <p
+            className="text-2xl font-semibold leading-relaxed mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             My apps are usually deployed on Vercel — using serverless
             architecture for auto-scaling and seamless performance.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
+            <div data-aos="fade-right">
               <h3 className="text-2xl font-semibold mb-2 text-white border-b-4 border-white inline-block">
                 🛠️ Skills
               </h3>
@@ -33,7 +56,7 @@ export default function AboutMe() {
               </ul>
             </div>
 
-            <div>
+            <div data-aos="fade-left">
               <h3 className="text-2xl font-semibold mb-2 text-white border-b-4 border-white inline-block">
                 📚 Currently Learning
               </h3>
@@ -45,7 +68,7 @@ export default function AboutMe() {
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8" data-aos="zoom-in-up">
             <h3 className="text-2xl font-semibold mb-2 text-white border-b-4 border-white inline-block">
               🏆 Hackathon Experience
             </h3>
@@ -57,7 +80,7 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8" data-aos="fade-up">
             <h3 className="text-2xl font-semibold mb-2 text-white border-b-4 border-white inline-block">
               🎯 My Goal
             </h3>

@@ -47,14 +47,14 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-gray-700 py-20 text-white px-6 max-w-screen-2xl mx-auto">
+    <section className=" bg-gray-700  py-20 text-white px-6 max-w-screen-2xl mx-auto">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-12"
+          className="text-4xl md:text-5xl font-bold text-center mb-12 "
         >
           What I Can Build For You
         </motion.h2>
@@ -63,7 +63,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white text-red-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
+              className="bg-gradient-to-br from-gray-100 via-gray-300 to-gray-600 text-black  p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
